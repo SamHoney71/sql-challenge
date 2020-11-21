@@ -10,7 +10,7 @@ FROM employees e
 JOIN salaries s ON (e.emp_no = s.emp_no)
 
 --2. List first name, last name, and hire date for employees who were hired in 1986.
---- Andrew Perez helped me with the Syntax "EXTRACT (YEAR FROM ...)".
+--- Slack:Ask the Class & Andrew Perez helped me with the Syntax "EXTRACT (YEAR FROM ...)".
 
 SELECT first_name, last_name, hire_date FROM employees e
 WHERE EXTRACT(YEAR FROM e.hire_date) = 1986
